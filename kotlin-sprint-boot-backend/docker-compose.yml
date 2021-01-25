@@ -1,0 +1,10 @@
+version: '3'
+services:
+  database:
+    image: "postgres:10.6"
+    environment:
+      - POSTGRES_DB=employeedb
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secret
+    ports:
+      - "5432:5432"
